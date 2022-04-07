@@ -1,168 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 :root{
-    --verde_escuro: #1A5C38;
-    --verde_claro: #3CD782;
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
 }
 
-body{
+*{
+    padding: 0px;
     margin: 0px;
-    background-color: #84e1ad;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-p{
-    text-align: justify;
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
-header > p{
+header{
+    background-color: black;
+    color: white;
     text-align: center;
 }
 
 header > h1{
-    font-size: 2em;
-    text-shadow: 2px 2px 0px black;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8vw;
 }
 
-header{
-    text-align: center;
-    padding: 15px;
-    background-image: linear-gradient(180deg, var(--verde_claro), var(--verde_escuro));
-    color: white;
+header > p{
+    padding-bottom: 50px;
 }
 
-nav{
-    margin-top: 28px;
-    text-align: left;
-    font-weight: bold;
-}
-
-nav > a{
-    padding: 15px;
-    color: white;
+a{
     text-decoration: none;
-    border-radius: 8px;
-    transition-duration: 0.5s;
-}
-
-nav > a:hover{
-    background-color: var(--verde_claro);
-    color: var(--verde_escuro);
-}
-
-main{
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    background-color: white;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.514);
-    border-radius: 0px 0px 8px 8px;
-}
-
-img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-}
-
-main > p{
-    padding: 15px;
-}
-
-footer{
-    text-align: center;
-    background-color: var(--verde_escuro);
-    color: lightgray;
-}
-
-footer > span{
     color: white;
     font-weight: bold;
 }
 
-@font-face {
-    font-family: idroid;
-    src: url(../fontes/idroid.otf) format('opentype');
-}
-
-#conteudo-inicio{
-    padding: 15px;
-}
-
-#titulo{
-    font-family: idroid;
-    color: var(--verde_escuro);
-}
-
-#img-pequena{
-    max-width: 300px;
-}
-
-#video{
-    padding: 15px;
-    padding-bottom: 58%;
-    text-align: center;
-    background-color: var(--verde_escuro);
-    position: relative;
-}
-
-#video > iframe{
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-    position: absolute;
-}
-
-#extra{
-    padding: 12px;
-}
-
-#extra > h4{
-    margin-bottom: 0px;
-    padding: 8px;
-    background-color: var(--verde_claro);
-    color: white;
-    border-radius: 15px 15px 0px 0px;
-}
-
-#extra > div{
-    margin-top: 0px;
-    padding: 8px 15px 10px 15px;
-    border-radius: 0px 0px 15px 15px;
-    background-color: #3cd78281;
-}
-
-#extra-intro{
-    margin-top: 0px;
-}
-
-#lista-versoes-android{
-    padding-left: 15px;
-    columns: 2;
-    list-style-type: '\2714\00A0';
-}
-
-.palavras-destaque{
-    color: var(--verde_escuro);
-    font-weight: bold;
-}
-
-.link::after{
-    content: '\1F517';
-}
-
-.link:hover{
+a:hover{
     text-decoration: underline;
 }
 
-.link{
-    text-decoration: none;
-    color: var(--verde_escuro);
-    font-weight: bold;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 25px;
+    font-family: var(--fonte3);
+    font-size: 3vw;
 }
 
-.subtitulo{
-    font-family: idroid;
-    background-image: linear-gradient(90deg, #59d892, white);
-    color: var(--verde_escuro);
+footer{
+    padding: 4px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#img1{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+#img2{
+    background-image: url('../imagens/background002.jpg');
+}
+
+.normal{
+    background-color: white;
+    color: black;
+}
+
+.imagem{
+    background-color: burlywood;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.452);
+}
+
+.imagem > p{
+    width: fit-content;
+    padding: 4px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+    background-color: rgba(0, 0, 0, 0.384);
 }
